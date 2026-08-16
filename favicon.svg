@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <clipPath id="round"><rect width="100" height="100" rx="22"/></clipPath>
+  </defs>
+  <g clip-path="url(#round)">
+    <rect x="0" y="0"    width="100" height="33.34" fill="#ff6a1a"/>
+    <rect x="0" y="33.33" width="100" height="33.34" fill="#fdfdfc"/>
+    <rect x="0" y="66.66" width="100" height="33.34" fill="#0e8a3c"/>
+  </g>
+  <text x="50" y="54" font-family="'Overpass', Arial, Helvetica, sans-serif"
+        font-size="52" font-weight="800" letter-spacing="-3"
+        text-anchor="middle" dominant-baseline="central" fill="#0f1a4a">PK</text>
+</svg>
