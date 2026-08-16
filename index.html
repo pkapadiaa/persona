@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parth Kapadia — Senior Software Engineer</title>
+  <meta name="description" content="Parth Kapadia — Senior Software Engineer at Cisco. Go microservices, API design, and cloud infrastructure platforms." />
+  <meta name="author" content="Parth Kapadia" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Parth Kapadia — Senior Software Engineer" />
+  <meta property="og:description" content="Go microservices, API design, and cloud infrastructure. Building the backbone of Cisco Intersight." />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;500;600;700;800;900&family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Neural network background (full page) -->
+  <canvas class="neural" id="neural" aria-hidden="true"></canvas>
+
+  <!-- Grain overlay -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Custom cursor -->
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="preloader__inner">
+      <div class="preloader__label">
+        <span data-txt>PARTH KAPADIA</span>
+        <span data-txt>SENIOR SOFTWARE ENGINEER</span>
+      </div>
+      <div class="preloader__count"><span id="count">0</span><em>%</em></div>
+    </div>
+    <div class="preloader__bar"><span id="bar"></span></div>
+  </div>
+
+  <!-- Nav -->
+  <header class="nav" id="nav">
+    <a href="#top" class="nav__brand" data-cursor="hover">PK<span>.</span></a>
+    <nav class="nav__links">
+      <a href="#work" data-cursor="hover">Work</a>
+      <a href="#projects" data-cursor="hover">Projects</a>
+      <a href="#about" data-cursor="hover">About</a>
+      <a href="#contact" class="nav__cta" data-cursor="hover">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero__meta">
+        <span class="tag">◍ Available for what's next</span>
+        <span class="tag">San Jose, CA</span>
+        <span class="tag">EST. 2020 @ Cisco</span>
+      </div>
+
+      <h1 class="hero__title">
+        <span class="line"><span class="word">Parth</span></span>
+        <span class="line"><span class="word">Kapadia<em class="dot">.</em></span></span>
+      </h1>
+
+      <div class="hero__bottom">
+        <div class="hero__lead">
+          <p class="hero__desc">
+            Senior Software Engineer crafting <i>Go microservices</i>, resilient <i>REST APIs</i>,
+            and cloud infrastructure that powers <b>Cisco Intersight</b>.
+          </p>
+          <a href="assets/Parth-Kapadia-Resume.pdf" class="btn-download" download data-cursor="hover">
+            <span>Download Résumé</span>
+            <svg viewBox="0 0 24 24" width="16" height="16"><path d="M12 3v12m0 0l5-5m-5 5l-5-5M4 21h16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+        <a href="#work" class="scroll-cue" data-cursor="hover">
+          <span>Scroll</span>
+          <svg viewBox="0 0 24 24" width="18" height="18"><path d="M12 4v16m0 0l6-6m-6 6l-6-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <section class="marquee" aria-hidden="true">
+      <div class="marquee__row">
+        <div class="marquee__track" data-marquee data-dir="1">
+          <span>GoLang</span><em>✳</em><span class="outline">Cloud Infrastructure</span><em>✳</em><span>Microservices</span><em>✳</em><span class="outline">REST APIs</span><em>✳</em>
+          <span>GoLang</span><em>✳</em><span class="outline">Cloud Infrastructure</span><em>✳</em><span>Microservices</span><em>✳</em><span class="outline">REST APIs</span><em>✳</em>
+        </div>
+      </div>
+      <div class="marquee__row marquee__row--alt">
+        <div class="marquee__track" data-marquee data-dir="-1">
+          <span class="outline">Hyper-Converged</span><em>✳</em><span>AWS</span><em>✳</em><span class="outline">Apache Kafka</span><em>✳</em><span>Docker</span><em>✳</em>
+          <span class="outline">Hyper-Converged</span><em>✳</em><span>AWS</span><em>✳</em><span class="outline">Apache Kafka</span><em>✳</em><span>Docker</span><em>✳</em>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <span class="section__idx">(01)</span>
+      <div class="about__grid">
+        <p class="section__label" data-reveal-lines>About</p>
+        <div class="about__body">
+          <p class="about__lead" data-reveal-lines>
+            I'm a software engineer with deep experience in Go microservices, API design,
+            and cloud infrastructure platforms.
+          </p>
+          <p data-reveal-lines>
+            At Cisco, I develop core backend services for the Intersight cloud management platform —
+            shipping features end to end. That's meant building scalable fleet management for Cisco
+            Unified Edge, wiring integration workflows for Nutanix Hyper-Converged Infrastructure,
+            and delivering automated capacity planning for enterprise platforms.
+          </p>
+          <p data-reveal-lines>
+            I translate complex infrastructure requirements into clean, maintainable, reliable services.
+            Beyond the day-to-day, I'm a self-motivated builder who works smart — leaning on thoughtful
+            design, automation, and continuous optimization to ship software that matters.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK / EXPERIENCE -->
+    <section class="work" id="work">
+      <div class="work__head">
+        <span class="section__idx">(02)</span>
+        <h2 class="section__title" data-reveal-lines>Experience</h2>
+      </div>
+
+      <ol class="timeline">
+        <li class="job" data-job>
+          <div class="job__meta">
+            <span class="job__years">Nov 2024 — Present</span>
+            <span class="job__place">On-site · SF Bay Area</span>
+          </div>
+          <div class="job__main">
+            <h3 class="job__role"><span>Senior Software Engineer</span></h3>
+            <p class="job__co">Cisco</p>
+            <p class="job__desc">
+              Design, build, and maintain Go-based microservices powering the Cisco Intersight hybrid-cloud
+              platform. Architect robust REST APIs, optimize concurrency patterns,
+              and ensure microservice resiliency across cloud and appliance environments. Lead scalable backend
+              services for Cisco Unified Edge Fleet Management — centralized orchestration and standardized
+              configuration across distributed edge sites.
+            </p>
+            <ul class="job__tags"><li>Go</li><li>REST</li><li>Concurrency</li><li>Fleet Mgmt</li><li>Edge</li></ul>
+          </div>
+        </li>
+
+        <li class="job" data-job>
+          <div class="job__meta">
+            <span class="job__years">Sep 2021 — Nov 2024</span>
+            <span class="job__place">3 yrs 3 mos</span>
+          </div>
+          <div class="job__main">
+            <h3 class="job__role"><span>Software Engineer III</span></h3>
+            <p class="job__co">Cisco</p>
+            <p class="job__desc">
+              Implemented the Cisco &amp; Nutanix HCI integration — automated deployment, lifecycle operations,
+              and cloud management for Nutanix clusters. Developed Capacity Planning features for Cisco HyperFlex,
+              delivering automated resource forecasting, runway modeling, and utilization analytics.
+            </p>
+            <ul class="job__tags"><li>Nutanix HCI</li><li>AWS</li><li>Capacity Planning</li><li>Analytics</li></ul>
+          </div>
+        </li>
+
+        <li class="job" data-job>
+          <div class="job__meta">
+            <span class="job__years">Feb 2020 — Sep 2021</span>
+            <span class="job__place">1 yr 8 mos</span>
+          </div>
+          <div class="job__main">
+            <h3 class="job__role"><span>Software Engineer II</span></h3>
+            <p class="job__co">Cisco</p>
+            <p class="job__desc">
+              Built and shipped microservices for the Intersight platform, establishing the patterns and
+              foundations that would scale across cloud and appliance deployments.
+            </p>
+            <ul class="job__tags"><li>Go</li><li>Microservices</li><li>Docker</li></ul>
+          </div>
+        </li>
+
+        <li class="job" data-job>
+          <div class="job__meta">
+            <span class="job__years">Jun 2019 — Aug 2019</span>
+            <span class="job__place">Internship</span>
+          </div>
+          <div class="job__main">
+            <h3 class="job__role"><span>Software Engineer Intern</span></h3>
+            <p class="job__co">Cisco</p>
+            <p class="job__desc">
+              Designed and built an automated Hardware Compatibility List (HCL) Change Monitor pipeline for
+              Intersight — event-driven streaming with Apache Kafka &amp; Kafka Connect ingesting HCL status
+              changes into Amazon S3, plus Jupyter analytics that eliminated false alerts in DevOps dashboards.
+            </p>
+            <ul class="job__tags"><li>Kafka</li><li>S3</li><li>Jupyter</li><li>Pipelines</li></ul>
+          </div>
+        </li>
+
+        <li class="job" data-job>
+          <div class="job__meta">
+            <span class="job__years">Aug 2018 — Dec 2019</span>
+            <span class="job__place">Los Angeles, CA</span>
+          </div>
+          <div class="job__main">
+            <h3 class="job__role"><span>Graduate Teaching Assistant</span></h3>
+            <p class="job__co">University of Southern California</p>
+            <p class="job__desc">
+              Evaluated C-based systems programming and kernel projects (Weenix OS) — process scheduling,
+              thread synchronization, virtual file systems, and virtual memory. Reviewed student code for
+              race conditions, memory leaks, and POSIX concurrency across three consecutive semesters.
+            </p>
+            <ul class="job__tags"><li>C</li><li>Kernel</li><li>Concurrency</li><li>Mentoring</li></ul>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects" id="projects">
+      <div class="work__head">
+        <span class="section__idx">(03)</span>
+        <h2 class="section__title" data-reveal-lines>Selected Projects</h2>
+      </div>
+
+      <div class="pgrid">
+        <article class="pcard" data-cursor="hover" data-tilt>
+          <div class="pcard__num">01</div>
+          <h3 class="pcard__title">Dhanwan</h3>
+          <p class="pcard__type">Swing-trading signal system · Personal</p>
+          <p class="pcard__desc">
+            A hybrid Go + Python engine that scans equities and surfaces swing-trade signals. MongoDB Atlas
+            for storage, deployed on AWS EC2, with an Android client on the roadmap.
+          </p>
+          <ul class="pcard__stack"><li>Go</li><li>Python</li><li>MongoDB</li><li>AWS EC2</li></ul>
+        </article>
+
+        <article class="pcard" data-cursor="hover" data-tilt>
+          <div class="pcard__num">02</div>
+          <h3 class="pcard__title">Cisco Intersight</h3>
+          <p class="pcard__type">Cloud management platform · Cisco</p>
+          <p class="pcard__desc">
+            Core backend services for a hybrid-cloud infrastructure platform — fleet management, HCI integrations,
+            and capacity planning running at enterprise scale.
+          </p>
+          <ul class="pcard__stack"><li>Go</li><li>Docker</li><li>REST</li><li>AWS</li></ul>
+        </article>
+
+        <article class="pcard" data-cursor="hover" data-tilt>
+          <div class="pcard__num">03</div>
+          <h3 class="pcard__title">Weenix OS</h3>
+          <p class="pcard__type">Operating system · USC</p>
+          <p class="pcard__desc">
+            An operating system built on the 6th Edition Unix design — kernel threading, virtual file systems
+            (VFS / S5FS), and virtual memory management written in C.
+          </p>
+          <ul class="pcard__stack"><li>C</li><li>Kernel</li><li>VFS</li><li>VM</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- CAPABILITIES / SKILLS -->
+    <section class="skills" id="skills">
+      <div class="work__head">
+        <span class="section__idx">(04)</span>
+        <h2 class="section__title" data-reveal-lines>Toolbox</h2>
+      </div>
+      <ul class="skills__list">
+        <li data-reveal>GoLang</li>
+        <li data-reveal>Cloud Computing</li>
+        <li data-reveal>Microservices</li>
+        <li data-reveal>REST API Design</li>
+        <li data-reveal>Hyper-Converged Infra</li>
+        <li data-reveal>AWS</li>
+        <li data-reveal>Apache Kafka</li>
+        <li data-reveal>Docker</li>
+        <li data-reveal>Concurrency</li>
+        <li data-reveal>Nutanix HCI</li>
+        <li data-reveal>Python</li>
+        <li data-reveal>MongoDB</li>
+        <li data-reveal>Kotlin</li>
+        <li data-reveal>System Design</li>
+      </ul>
+    </section>
+
+    <!-- EDUCATION + CERTS -->
+    <section class="edu" id="education">
+      <div class="edu__col">
+        <div class="work__head">
+          <span class="section__idx">(05)</span>
+          <h2 class="section__title" data-reveal-lines>Education</h2>
+        </div>
+        <div class="edu__item" data-reveal>
+          <h3>University of Southern California</h3>
+          <p>M.S. Computer Science · 2018–2019</p>
+          <span>GPA 3.71 / 4.00</span>
+        </div>
+        <div class="edu__item" data-reveal>
+          <h3>NMIMS (SVKM's Narsee Monjee)</h3>
+          <p>B.S. Computer Science · 2012–2016</p>
+          <span>GPA 3.56 / 4.00</span>
+        </div>
+      </div>
+      <div class="edu__col">
+        <div class="work__head">
+          <span class="section__idx">(06)</span>
+          <h2 class="section__title" data-reveal-lines>Certifications</h2>
+        </div>
+        <div class="edu__item" data-reveal>
+          <h3>Certified Ethical Hacker</h3>
+          <p>EC-Council · 2017</p>
+        </div>
+        <div class="edu__item" data-reveal>
+          <h3>Kotlin for Java Developers</h3>
+          <p>Coursera · 2019</p>
+        </div>
+        <div class="edu__item" data-reveal>
+          <h3>Languages</h3>
+          <p>English · Gujarati · Hindi</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <span class="section__idx">(07)</span>
+      <p class="contact__label" data-reveal-lines>Let's build something</p>
+      <a href="mailto:pskapadiaa05@gmail.com" class="contact__mail" data-cursor="hover" data-reveal-lines>
+        pskapadiaa05<span>@</span>gmail.com
+      </a>
+      <div class="contact__socials">
+        <a href="https://www.linkedin.com/in/parth-kapadia-05/" target="_blank" rel="noopener" data-cursor="hover">LinkedIn ↗</a>
+        <a href="mailto:pskapadiaa05@gmail.com" data-cursor="hover">Email ↗</a>
+        <a href="https://github.com/pkapadiaa" target="_blank" rel="noopener" data-cursor="hover">GitHub ↗</a>
+        <a href="assets/Parth-Kapadia-Resume.pdf" download data-cursor="hover">Résumé ↓</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© 2026 Parth Kapadia</span>
+    <span>Built with Go-brain energy &amp; GSAP</span>
+    <span>San Jose, California</span>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
